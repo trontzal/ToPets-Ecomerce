@@ -1,0 +1,40 @@
+{
+    "home": {
+        "eslogan": "We welcome you to this corner for pet lovers. We want our pets to be happy and well cared for, so we offer you a wide catalog of products for them.<br/><span class='entrar'>Enter <a href='catalogo.html'><strong>Topets</strong></a> and find what they need.</span>"
+    },
+
+    "footer":{
+        "titulo1": "COOKIES POLICY",
+        "titulo1.1": "Read our cookies policy here",
+        "titulo2":"Who we are",
+        "titulo2.1":"Topets is made up of: Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri and Jessica Mosteiro",
+        "titulo3":"CONTACT"
+    },
+    "carrito":{
+        "titulo":"Your chat",
+        "cantidad":"Amount",
+        "precio":"Price",
+        "resumen":"Summary"       
+    },
+
+    "checkout":{
+        "cliente":"Already a customer? <a href=login-page.html>Log in</a>!<br> If not, fill in the following form.",
+        "resumen":"Purchase Summary"
+    },
+
+    "login-page":{
+        "correo":"Correo:",
+        "contraseña":"Contraseña:",
+        "iniciar":"Iniciar sesión",
+        "olvidado":"Has olvidado tu Contraseña !!",
+        "crear":"Crear cuenta"
+    },
+    
+    "formulario":{
+        "formulario":"Formulario de Registro",
+        "aceptar":"<input type='checkbox' class='form-check-input' value='checkedValue' checked> Aceptar terminos y condiciones.",
+        "enviar":"Enviar"
+    } 
+}
+
+

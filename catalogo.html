@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catalogo</title>
+    <link rel="stylesheet" href="source/style.css" />
+    <link rel="stylesheet" href="source/style-tablet.css" />
+    <link rel="stylesheet" href="source/style-mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+  </head>
+
+  <body>
+    <div class="container-fluid d-flex justify-content-end position-relative">
+      <p class="parrafoFecha me-5 position-absolute" id="fecha"></p>
+      <select name="idiomas" id="flags" class="flags mt-3 me-4">
+        <option class="flags_item" data-language="es">
+          <p>es</p>
+        </option>
+        <option class="flags_item" data-language="en">
+          <p>en</p>
+        </option>
+        <option disabled value="EUS"></option>
+      </select>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex mb-lg-0">
+            <li class="nav-item">
+              <a id="link" class="nav-link active ms-5 me-5 mt-4" aria-current="page" href="index.html" >Home</a >
+            </li>
+
+            <li id="link" class="nav-item dropdown mt-4">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catalogo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a id="todo" class="link-categoria dropdown-item" href="#">Todo</a></li>
+                <li><a id="perro" class="link-categoria dropdown-item" href="#">Perros</a></li>
+                <li><a id="gato" class="link-categoria dropdown-item" href="#">Gatos</a></li>
+                <li><a id="pajaro" class="link-categoria dropdown-item" href="#">Aves</a></li>
+              </ul>
+            </li>
+            <li id="logo-gato" class="nav-item">
+              <a href="index.html"><img src="/image/logoToPets-sin-blanco.png" alt="" /></a>            </li>
+            <li id="search_">
+              <form id="search" class="d-flex" role="search">
+                <input id="input-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button id="btn-login" class="btn btn border col" type="submit">
+                  Search
+                </button>
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="img-usuario" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" alt="Avatar" loading="lazy"/>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="cliente.html">Mi perfil</a>
+                <a id="nombre-usuario" class="dropdown-item" href="login-page.html">Login</a>
+                <a id="cerrar" class="dropdown-item" href="#">Cerrar sesion</a>
+              </div>
+            </li>
+            <li class="submenu">
+              <div class="carrito-img">
+                <span id="bubble" class="badge badge-primary text-bg-danger position-absolute"></span>
+               <a  href="/carrito.html"> <i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- -----------acaba navegacion------------ -->
+  <!-- slide -->
+  <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./image/gato-kira.jpg" class="d-block w-100" alt="imagen de gato" />
+      </div>
+      <div class="carousel-item">
+        <img src="/image/pecera.jpg" class="d-block w-100" alt="imagen de pecera" />
+      </div>
+      <div class="carousel-item">
+        <img src="/image/perro-camiseta-amarilla.jpg" class="d-block w-100" alt="imagen perro con camiseta" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+  <!-- fin slide -->
+  <!------------- catalogo de imagenes----------- -->
+  <div class="container">
+    <h2 id="catalogo-titulo" class="text-center" data-section="catalogo" data-value="titulo">Catalogo completo</h2>
+    <div id="cards-catalogo" class="container cards-catalogo">
+
+  </div>
+  <!----------fin catalogo ------->
+  <!-- catalogo oculto  -->
+  <details>
+    <summary class="text-center fs-3 fw-bold">Ver mas</summary>
+    <div id="cards-catalogo-oculto" class="container cards-catalogo"> 
+    </div>
+  </details>
+  <!-- afin catalogo oculto -->
+  <!-- footer -->
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+
+      <!-- Grid container -->
+      <div class="container p-4 pb-0 d-flex justify-content-center">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+              class="fab fa-instagram"></i></a>
+
+         
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4" data-section="footer" data-value="titulo1">
+                    Política de cookies
+                  </h6>
+                  <p  data-section="footer" data-value="titulo1.1">
+                    Lee aquí nuestra
+                    <a target="_blank" href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">política de
+                      cookies</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo2">Quienes somos</h6>
+                  <p  data-section="footer" data-value="titulo2.1">
+                    Topets lo forman: Amaia Berrocal, Anyell Mendoza, Nasser
+                    Oufallah, Gonzalo Lecumberri y Jessica Mosteiro
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4"  data-section="footer" data-value="titulo3">Contacto</h6>
+                  <p>
+                    <i class="fas fa-home me-3 text-secondary"></i> Bolueta,
+                    Peñascal F5
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    info@topets.com
+                  </p>
+                  <p>
+                    <i class="fas fa-phone me-3 text-secondary"></i> 666 13 13
+                    13
+                  </p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div id="copy-footer" class="text-center p-4" >
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="/index.html">Topets.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="/js/app.js"></script>
+  <script src="/js/catalogo.js"></script>
+  <script src="/js/cerrar_sesion.js"></script>
+  <script src="/js/description_producto.js"></script>
+  <script type="text/javascript" src="/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
